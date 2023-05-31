@@ -8,13 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "vue": "^3.3.2",
-    "vue-router": "^4.2.0",
-    "axios": "^0.19.2"
+    "vue-router": "^4.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "vite": "^4.3.5"
+    "vite": "^4.3.5",
+    "vite-plugin-copy": "^0.1.6"
   }
 }
