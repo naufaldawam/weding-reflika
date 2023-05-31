@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding Of Reflika & Raden</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
+    <style>
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+      .music-button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 24px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <button id="music-button" class="music-button">
+      <i class="fas fa-music"></i>
+    </button>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var audio = new Audio('./src/assets/musik/menikahimu-kahitna.mp3'); // Perhatikan path file musik di sini
+
+        var musicButton = document.getElementById('music-button');
+        var isMusicPlaying = false;
+
+        function toggleMusic() {
+          if (isMusicPlaying) {
+            audio.pause();
+            isMusicPlaying = false;
+            musicButton.classList.remove('active');
+          } else {
+            audio.play();
+            isMusicPlaying = true;
+            musicButton.classList.add('active');
+          }
+        }
+
+        musicButton.addEventListener('click', toggleMusic);
+      });
+    </script>
+  </body>
+</html>
