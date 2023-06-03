@@ -43,6 +43,37 @@
   <PageHaditsNikah/>
   <!-- end of page hadist nikah -->
 
+
+  <!-- start of page mempelai wanita -->
+  <PageMempelaiWanita/>
+  <!-- end of page mempelai wanita -->
+
+  <!-- start of page sambung -->
+  <PageDan/>
+  <!-- end of page sambung -->
+
+  <!-- start of page mempelai Pria -->
+  <PageMempelaiPria/>
+  <!-- end of page mempelai pria -->
+
+  <!-- start of page alamat -->
+  <PageAlamat/>
+  <!-- end of page alamat -->
+    
+  <!-- start of page map -->
+  <MapView/>
+  <!-- end of page map -->
+
+  <!-- start of wedding gift -->
+  <WeddingGift/>
+  <!-- end of wedding gift -->
+
+  <!-- start of ucapan terima kasih -->
+  <UcapanTerimaKasih/>
+  <!-- end of ucapan terima kasih -->
+
+
+
   <!-- start of short telling -->
   <!-- end of short telling -->
 
@@ -50,6 +81,13 @@
 
 <script>
 import PageHaditsNikah from "./PageHaditsNikah.vue";
+import PageMempelaiWanita from "./PageMempelaiWanita.vue";
+import PageDan from "./PageDan.vue";
+import PageMempelaiPria from "./PageMempelaiPria.vue";
+import PageAlamat from "./PageAlamat.vue";
+import MapView from "./MapView.vue";
+import WeddingGift from "./WeddingGift.vue";
+import UcapanTerimaKasih from "./UcapanTerimaKasih.vue";
 
 export default {
   data() {
@@ -65,6 +103,14 @@ export default {
   name: "YoureInvited",
   components: {
     PageHaditsNikah,
+    PageMempelaiWanita,
+    PageDan,
+    PageMempelaiPria,
+    PageAlamat,
+    MapView,
+    WeddingGift,
+    UcapanTerimaKasih,
+
   },
   mounted() {
     // Mulai perhitungan waktu saat komponen telah dimuat
@@ -222,5 +268,15 @@ export default {
     font-size: 14px;
     padding: 8px 16px;
   }
+  
+
 }
+
+.custom-background{
+  background-color: #faf1ea;
+  width: 100%;
+  height: 100vh;
+}
+
+
 </style>
