@@ -238,7 +238,7 @@ export default {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .text-invited-to {
     font-size: 20px;
   }
@@ -252,7 +252,7 @@ export default {
   }
 
   .box {
-    width: 80px;
+    width: 70px;
     height: 60px;
   }
 

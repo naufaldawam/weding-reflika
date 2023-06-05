@@ -1,11 +1,21 @@
 <template>
   <div class="container">
     <div class="text">Wedding Gift</div>
-    <div class="description">Doa restu anda merupakan karunia yang sangat berarti bagi kami</div>
+    <div class="description">Doa restu anda merupakan karunia yang sangat berarti bagi kami
+    </div>
     <img class="image" src="https://hy.galipatstory2.com/wp-content/uploads/2022/12/Bank-BCA-Logo-PNG-240p-FileVector69.png" alt="Gambar">
-    <div class="text">Transfer ke rekening BCA a.n Nelia Agustin</div>
-    <div class="text">3020580479</div>
-    <button class="copy-button" @click="copyText">Copy</button>
+    <div class="text">Transfer ke rekening BCA a.n "mau rekening siapa"</div>
+    <div class="text">*********</div>
+    <button class="copy-button" @click="copyText">Salin Nomor Rekening</button>
+
+    <div class="spasi"/>
+    <img class="image" src="https://hy.galipatstory2.com/wp-content/uploads/2022/12/Bank-BRI.png" alt="Gambar">
+    <div class="text">Transfer ke rekening Mandiri a.n "mau rekening siapa"</div>
+    <div class="text">*********</div>
+    <button class="copy-button" @click="copyText">Salin Nomor Rekening</button>
+
+
+
   </div>
 </template>
 
@@ -14,9 +24,9 @@ export default {
   name: "CustomBackground",
   methods: {
     copyText() {
-      const textToCopy = "3020580479";
+      const textToCopy = "ini hasil dari tombol copy";
       navigator.clipboard.writeText(textToCopy);
-      alert("Text copied!");
+      alert("Nomor Rekening Di Berhasil Di Salin");
     },
   },
 };
@@ -60,5 +70,8 @@ export default {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.spasi{
+  padding : 10px;
 }
 </style>
